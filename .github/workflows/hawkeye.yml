@@ -24,4 +24,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Checks for Vulnerabilities with Hawkeye
       run: |
-        hawkeye scan --target web/
+        hawkeye scan --target web/ --fail-on medium
